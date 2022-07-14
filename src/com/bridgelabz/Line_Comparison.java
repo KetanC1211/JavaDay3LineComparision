@@ -15,5 +15,23 @@ public class Line_Comparison {
 		int z = ((x2-x1)*(x2-x1)) + ((y2-y1)*(y2-y1));
 		double length = Math.sqrt(z);
 		System.out.println("Length of line is " +length);
+
+		System.out.println("Enter the first Co-ordinate of second line (a1,b1)");
+		int a1 = sc.nextInt();
+		int b1 = sc.nextInt();
+		System.out.println("Entered the Co-ordinate is ("+a1+" , "+b1+")");
+		System.out.println("Enter the second Co-ordinate of second line(x2,y2)");
+		int a2 = sc.nextInt();
+		int b2 = sc.nextInt();
+		System.out.println("Entered the Co-ordinate is ("+a2+" , "+b2+")");
+		int z1 = ((a2-a1)*(a2-a1)) + ((b2-b1)*(b2-b1));
+		double length2 = Math.sqrt(z1);
+		System.out.println("Length of second line is " +length2);
+		if(length==length2) {
+			System.out.println("Length of lines are equal");
+		}
+		else{
+			System.out.println("Length of lines are not equal");
+		}
 	}
 }
